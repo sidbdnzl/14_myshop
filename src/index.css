@@ -1,13 +1,21 @@
 :root {
   --color-bg: #fafafa;
+  /* 背景色 */
   --color-text: #222;
+  /* 文字色 */
   --color-muted: #888;
+  /* 補足テキスト・soldoutバッジの色 */
   --color-accent: #ff5a5f;
+  /* カートバッジなどのアクセント色 */
   --color-border: #e5e5e5;
+  /* カード枠線 */
   --color-header: #d9d9d9;
+  /* ヘッダーの背景色 */
   --font-family: "Helvetica Neue", "Hiragino Sans", "Yu Gothic", sans-serif;
   --max-width: 960px;
+  /* コンテンツの最大幅 */
   --card-radius: 4px;
+  /* カードの角丸 */
 }
 
 * {
