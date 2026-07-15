@@ -263,6 +263,16 @@ img {
   font-weight: bold;
 }
 
+.item-card__fav {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.item-card__fav.is-active {
+  color: var(--color-accent);
+}
+
 /* ---------- ItemDetail ---------- */
 
 .item-detail {
