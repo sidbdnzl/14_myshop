@@ -1,14 +1,19 @@
 // src/pages/Favorites.jsx
 import { useEffect, useState } from "react";
 import ItemCard from "../components/ItemCard.jsx";
+// src/pages/Favorites.jsx ※追加：既存のimportの下
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase.js";
+
 
 export default function Favorites({ favorites, cart }) {
   const [items, setItems] = useState([]);
 
+  // src/pages/Favorites.jsx
   useEffect(() => {
-    fetch("/items.json")
-      .then((res) => res.json())
-      .then((data) => setItems(data.items));
+    getDocs(collection(db, "items")).then((snapshot) => {
+      setItems(snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() })));
+    });
   }, []);
 
   // 全アイテムから、お気に入りIDに含まれるものだけを残す

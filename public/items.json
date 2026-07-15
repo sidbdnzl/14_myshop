@@ -2,63 +2,75 @@
   "items": [
     {
       "id": "001",
-      "name": "MacBook Air M3",
-      "image": "/images/item-dammy.webp",
-      "price": 164800,
-      "category": "ガジェット",
-      "description": "毎日使ってる相棒。軽くて持ち運びやすい。",
+      "name": "シーラカンスのキーホルダー",
+      "image": "/images/coelacanth.png",
+      "price": 500,
+      "category": "装キーホルダー",
+      "description": "水族館で見つけたキーホルダー",
       "status": "onsale",
       "code": "MS-001",
-      "color": "ミッドナイト",
-      "size": "13インチ"
+      "color": "インディゴ",
+      "size": "約9cm"
     },
     {
       "id": "002",
-      "name": "無印良品のマグカップ",
-      "image": "/images/item-dammy.webp",
-      "price": 590,
-      "category": "キッチン",
-      "description": "コーヒーもスープもこれ一つ。",
-      "status": "soldout",
+      "name": "魚のオブジェ",
+      "image": "/images/fish.png",
+      "price": 23000,
+      "category": "オブジェ",
+      "description": "木彫りの魚のオブジェ",
+      "status": "onsale",
       "code": "MS-002",
-      "color": "白",
-      "size": "約330ml"
+      "color": "ヒノキ",
+      "size": "約30cm"
     },
     {
       "id": "003",
-      "name": "お気に入りのスニーカー",
-      "image": "/images/item-dammy.webp",
-      "price": 12800,
-      "category": "ファッション",
-      "description": "通学からちょっとしたお出かけまで。",
+      "name": "ムキムキパトリック",
+      "image": "/images/mukimuki.png",
+      "price": 1600,
+      "category": "マスコット",
+      "description": "パトリックのムキムキ姿なマスコット",
       "status": "onsale",
       "code": "MS-003",
-      "color": "ホワイト",
-      "size": "26.5cm"
+      "color": "ピンク",
+      "size": "約15cm"
     },
     {
       "id": "004",
-      "name": "文庫本セット",
-      "image": "/images/item-dammy.webp",
-      "price": 2400,
-      "category": "本",
-      "description": "去年読んで良かった本たち。",
+      "name": "neco",
+      "image": "/images/neco.png",
+      "price": 500,
+      "category": "置物",
+      "description": "ねこ",
       "status": "onsale",
       "code": "MS-004",
-      "color": "カバー各色",
-      "size": "文庫判"
+      "color": "オレンジ",
+      "size": "約7cm"
     },
     {
       "id": "005",
-      "name": "コーヒードリッパー",
-      "image": "/images/item-dammy.webp",
-      "price": 1800,
-      "category": "キッチン",
-      "description": "朝のルーティンに欠かせない道具。",
+      "name": "pinguたち",
+      "image": "/images/pingu.png",
+      "price": 1000,
+      "category": "キーホルダー",
+      "description": "ピングーのめじるしアクセサリーたち",
       "status": "onsale",
       "code": "MS-005",
-      "color": "クリア",
-      "size": "1〜2杯用"
+      "color": "黒",
+      "size": "約4cm"
+    },
+    {
+      "id": "006",
+      "name": "見守るレッサーパンダ",
+      "image": "/images/redpanda.png",
+      "price": 200,
+      "category": "マスコット",
+      "description": "常に見守るレッサーパンダ",
+      "status": "onsale",
+      "code": "MS-006",
+      "color": "ブラウン",
+      "size": "約3cm"
     }
   ]
 }
