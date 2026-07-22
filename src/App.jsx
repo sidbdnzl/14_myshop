@@ -19,9 +19,9 @@ export default function App() {
   const cart = useCart(); // 追加
 
   return (
-    <div className="app">
+    <div className="app-container">
       <Header cart={cart} />
-      <main className="app__main">
+      <main className="main-content">
         <Routes>
           <Route path="/" element={<Home favorites={favorites} cart={cart} />} />
           <Route path="/items/:id" element={<ItemDetail favorites={favorites} cart={cart} />} />

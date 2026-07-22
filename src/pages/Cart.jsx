@@ -39,27 +39,27 @@ export default function Cart({ cart }) {
   }
 
   return (
-    <section className="cart">
+    <section className="cart-container">
       <h2>カート</h2>
       <ul className="cart-list">
         {rows.map((row) => (
-          <li key={row.id} className="cart-row">
+          <li key={row.id} className="cart-item-row">
             <img src={row.image} alt={row.name} />
-            <div className="cart-row__info">
+            <div className="cart-item-info">
               <p>{row.name}</p>
               <p>¥{row.price.toLocaleString()}</p>
             </div>
-            <div className="cart-row__quantity">
+            <div className="cart-quantity-control">
               <button type="button" onClick={() => cart.update(row.id, row.quantity - 1)}>−</button>
               <span>{row.quantity}</span>
               <button type="button" onClick={() => cart.update(row.id, row.quantity + 1)}>＋</button>
             </div>
-            <p className="cart-row__subtotal">¥{(row.price * row.quantity).toLocaleString()}</p>
+            <p className="cart-item-subtotal">¥{(row.price * row.quantity).toLocaleString()}</p>
             <button type="button" onClick={() => cart.remove(row.id)}>削除</button>
           </li>
         ))}
       </ul>
-      <p className="cart-total">合計：¥{totalPrice.toLocaleString()}</p>
+      <p className="cart-total-price">合計：¥{totalPrice.toLocaleString()}</p>
     </section>
   );
 }

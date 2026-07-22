@@ -30,9 +30,9 @@ export default function Home({ favorites, cart }) {
   const hasMore = visibleCount < items.length;
 
   return (
-    <div className="home">
-      <h2 className="home__title">item</h2>
-      <ul className="home__list">
+    <div className="home-container">
+      <h2 className="page-title">item</h2>
+      <ul className="product-grid">
         {visibleItems.map((item) => (
           <li key={item.id}>
             <ItemCard item={item} favorites={favorites} cart={cart} />
@@ -42,7 +42,7 @@ export default function Home({ favorites, cart }) {
       {hasMore && (
         <button
           type="button"
-          className="home__more"
+          className="btn-load-more"
           onClick={() => setVisibleCount((c) => c + STEP)}
         >
           more

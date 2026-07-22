@@ -29,9 +29,9 @@ export default function Favorites({ favorites, cart }) {
   }
 
   return (
-    <div className="home">
-      <h2 className="home__title">favorites</h2>
-      <ul className="home__list">
+    <div className="home-container">
+      <h2 className="page-title">favorites</h2>
+      <ul className="product-grid">
         {favItems.map((item) => (
           <li key={item.id}>
             <ItemCard item={item} favorites={favorites} cart={cart} />
